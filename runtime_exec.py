@@ -16,7 +16,7 @@ Two kinds of value go into a query, kept strictly apart:
     available.
 
 A "checker" query selects a single value (the short answer). A "fetcher" query selects a
-row or rows (turned into a small summary record).
+row or rows (turned into a small summary record)
 """
 from __future__ import annotations
 

@@ -1,0 +1,7 @@
+# Runtime/demo dependencies for exposer.py + runtime_exec.py.
+# The skills/agents themselves are just Markdown and need nothing installed.
+# (support-binder has its own pinned deps — see tools/support-binder/pyproject.toml.)
+litellm>=1.0       # LLM client used by the demo (any tool-calling provider)
+psycopg[binary]>=3 # read-only Postgres access for --live runs
+pyyaml>=6          # parse the generated kit (catalog.yaml, runbooks, taxonomy)
+rich>=13           # terminal formatting for the traced demo

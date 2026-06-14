@@ -1,0 +1,7 @@
+# Launcher-provisioned virtual environment (created by run.py on first use)
+.venv/
+
+# Build/install artifacts
+*.egg-info/
+__pycache__/
+.pytest_cache/

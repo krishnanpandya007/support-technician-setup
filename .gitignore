@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.harness_cache/
+harness/
+.venv/
+venv/
+
+# support-binder / runtime output containing real schema names — kept local, never committed
+*.local.sql
+*.bound.sql
+*.local.yaml
+bindings.filled.yaml
+bindings.local.yaml
+
+# Local Claude Code settings (machine-specific; may contain secrets)
+.claude/settings.local.json
+
+# Environment / secret files
+.env
+*.env
+.secrets
+
+# Draft writeups & assets — kept local, not part of the offered repo
+BLOG*.md
+effectiveness_research.txt
+refrence_images/
+reference_images/

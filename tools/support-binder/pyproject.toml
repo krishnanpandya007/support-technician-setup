@@ -1,0 +1,25 @@
+[project]
+name = "support-binder"
+version = "0.1.0"
+description = "Off-model local CLI that introspects a Postgres/Supabase database and generates a scoped, read-only role (grants + row-level security) for a support agent. No LLM involvement."
+requires-python = ">=3.11"
+dependencies = [
+    "psycopg[binary]>=3",
+    "rich>=13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+support-binder = "support_binder.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["support_binder", "support_binder.engines"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

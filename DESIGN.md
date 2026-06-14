@@ -1,4 +1,4 @@
-# Support Agent Setup Bundle — Design
+# Support Agent Setup Bundle
 
 > Status: **Living design doc** for the current bundle (skills + agents + `support-binder`
 > + runtime). The previous code-pipeline design is archived under `legacy/DESIGN.md`.
